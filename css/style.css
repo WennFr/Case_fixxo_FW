@@ -236,10 +236,12 @@ footer {
   width: 100%;
 }
 footer .container {
-  border: solid black;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  text-align: center;
 }
 footer .container .menu-icons {
-  border: solid black;
+  margin-top: 14px;
 }
 footer .container .menu-icons .menu-link {
   color: #000000;
@@ -250,11 +252,11 @@ footer .container .menu-icons .menu-link {
 }
 footer .container .menu-icons .menu-link:hover {
   background-color: #BEBEBE;
-  color: #f3f3f3;
   text-decoration: none;
 }
 footer .container .menu-icons .menu-link:hover i {
-  transform: scale(1.3);
+  transition: transform 0.22s;
+  transform: scale(1.1);
 }
 footer .container .menu-icons .menu-link.facebook:hover {
   color: blue;
@@ -272,6 +274,6 @@ footer .container .menu-icons .menu-link.linkedin:hover {
   color: #04009a;
 }
 footer .container p {
-  border: solid black;
   color: #616365;
+  margin-top: 2px;
 }
