@@ -230,9 +230,33 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   text-decoration: none;
 }
 
+.company-guarantees {
+  top: 0;
+  width: 100%;
+}
+.company-guarantees .container {
+  border: solid black;
+  max-width: 1400px;
+}
+.company-guarantees .container .guarantee-box-icon {
+  padding-top: 15px;
+  border: solid black;
+  text-align: center;
+}
+.company-guarantees .container .guarantee-box-icon .box-header {
+  color: #000000;
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.company-guarantees .container .guarantee-box-icon .box-secondary-text {
+  color: #000000;
+}
+
 footer {
   background-color: #BEBEBE;
   top: 0;
+  margin-top: 2.5rem;
   width: 100%;
 }
 footer .container {

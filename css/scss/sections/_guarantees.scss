@@ -1,0 +1,47 @@
+.company-guarantees {
+    // border: solid black;
+
+    top: 0;
+    width: 100%;
+
+    .container {
+
+        border: solid black;
+        max-width: 1400px;
+        // @include content-center;
+
+
+        .guarantee-box-icon {
+            padding-top: 15px;
+            border: solid black;
+            // max-width: 17rem;
+            text-align: center;
+
+
+            // .guarantee-icon{
+
+
+            // }
+
+
+            .box-header {
+                color: $color-dark-1;
+                margin-top: 10px;
+                font-size: 17px;
+                font-weight: 700;
+            }
+            .box-secondary-text {
+                color: $color-dark-1;
+                
+            }
+
+
+
+
+
+        }
+
+
+    }
+
+}
