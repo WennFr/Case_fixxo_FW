@@ -247,7 +247,8 @@ footer .container .menu-icons .menu-link {
   color: #000000;
   border-radius: 100%;
   text-decoration: none;
-  margin-left: 1rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
   transition: background-color 0.25s, color 0.2s;
 }
 footer .container .menu-icons .menu-link:hover {
