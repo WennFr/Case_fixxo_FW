@@ -6,27 +6,26 @@
 
     .container {
 
-        // border: solid black;
+        border-top: solid $color-light-4;
         max-width: 1400px;
-        // @include content-center;
+        display: grid;
+        justify-content: center;
 
 
-        .guarantee-box-icon {
+        .guarantee-box-body {
             padding-top: 15px;
             // border: solid black;
-            // max-width: 17rem;
+            max-width: 250px;
             text-align: center;
 
-
-
-            .guarantee-icons {
+            .guarantee-box-icon {
                 // border: solid black;
                 @include content-center;
-                
-                .guarantee-icon{
+
+                .guarantee-icon {
                     display: inline-block;
                     height: 50px;
-                     width: 50px;
+                    width: 50px;
                     // border: solid black;
                     @include content-center;
                     @include default-colors;
@@ -44,7 +43,6 @@
                 font-size: 17px;
                 font-weight: 700;
                 // border: solid black;
-
             }
 
             .box-secondary-text {
@@ -52,13 +50,31 @@
 
             }
 
+        }
 
+
+        @include lg {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: center;
+            align-items: center;
+
+            .guarantee-box-body {
+                max-width: 100%;
+                padding-left: 3.2rem;
+                padding-right: 3.2rem;
+
+
+            }
 
 
 
         }
 
 
+
     }
+
+
 
 }

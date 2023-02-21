@@ -235,18 +235,22 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   width: 100%;
 }
 .company-guarantees .container {
+  border-top: solid #BEBEBE;
   max-width: 1400px;
+  display: grid;
+  justify-content: center;
 }
-.company-guarantees .container .guarantee-box-icon {
+.company-guarantees .container .guarantee-box-body {
   padding-top: 15px;
+  max-width: 250px;
   text-align: center;
 }
-.company-guarantees .container .guarantee-box-icon .guarantee-icons {
+.company-guarantees .container .guarantee-box-body .guarantee-box-icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.company-guarantees .container .guarantee-box-icon .guarantee-icons .guarantee-icon {
+.company-guarantees .container .guarantee-box-body .guarantee-box-icon .guarantee-icon {
   display: inline-block;
   height: 50px;
   width: 50px;
@@ -258,14 +262,27 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   border-radius: 50%;
   box-shadow: 0 9px 5px -2px rgba(0, 0, 0, 0.1);
 }
-.company-guarantees .container .guarantee-box-icon .box-header {
+.company-guarantees .container .guarantee-box-body .box-header {
   color: #000000;
   margin-top: 10px;
   font-size: 17px;
   font-weight: 700;
 }
-.company-guarantees .container .guarantee-box-icon .box-secondary-text {
+.company-guarantees .container .guarantee-box-body .box-secondary-text {
   color: #000000;
+}
+@media (min-width: 960px) {
+  .company-guarantees .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  .company-guarantees .container .guarantee-box-body {
+    max-width: 100%;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
 }
 
 footer {
