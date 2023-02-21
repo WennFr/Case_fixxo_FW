@@ -6,22 +6,36 @@
 
     .container {
 
-        border: solid black;
+        // border: solid black;
         max-width: 1400px;
         // @include content-center;
 
 
         .guarantee-box-icon {
             padding-top: 15px;
-            border: solid black;
+            // border: solid black;
             // max-width: 17rem;
             text-align: center;
 
 
-            // .guarantee-icon{
 
+            .guarantee-icons {
+                // border: solid black;
+                @include content-center;
+                
+                .guarantee-icon{
+                    display: inline-block;
+                    height: 50px;
+                     width: 50px;
+                    // border: solid black;
+                    @include content-center;
+                    @include default-colors;
+                    border-radius: 50%;
+                    box-shadow: 0 9px 5px -2px $color-shadow-1;
+                    // @include content-center;
+                }
 
-            // }
+            }
 
 
             .box-header {
@@ -29,10 +43,13 @@
                 margin-top: 10px;
                 font-size: 17px;
                 font-weight: 700;
+                // border: solid black;
+
             }
+
             .box-secondary-text {
                 color: $color-dark-1;
-                
+
             }
 
 
