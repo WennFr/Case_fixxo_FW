@@ -1,0 +1,108 @@
+.contact-form {
+    margin-top: 70px;
+
+    .container {
+
+        h1 {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        form {
+            margin-top: 40px;
+            margin-bottom: 100px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: "name"
+                "email"
+                "comments"
+                "button";
+            gap: 20px;
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 18px 20px;
+                border: 1px solid rgba(112, 112, 112, 0.4);
+            }
+
+            textarea {
+                height: 140px;
+                resize: none;
+            }
+
+            button {
+                grid-area: button;
+
+            }
+
+            .contact-form-name {
+                grid-area: name;
+
+                .error {
+                    font-size: 0.9em;
+                    padding: 5px;
+                    color: #ff7373;
+                }
+            }
+
+            .contact-form-email {
+                grid-area: email;
+
+                .error {
+                    font-size: 0.9em;
+                    padding: 5px;
+                    color: #ff7373;
+                }
+            }
+
+            .contact-form-comments {
+                grid-area: comments;
+
+                .error {
+                    font-size: 0.9em;
+                    padding: 5px;
+                    color: #ff7373;
+                }
+            }
+
+        }
+
+    }
+
+}
+
+@include md {
+    .contact-form {
+
+        .container {
+
+            form {
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "name email"
+                    "comments comments"
+                    "button empty";
+            }
+
+        }
+    }
+
+
+}
+
+@include lg {
+    .contact-form {
+
+        .container {
+
+            form {
+                button {
+                    width: 70%;
+                }
+            }
+
+        }
+    }
+
+}
