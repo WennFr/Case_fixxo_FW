@@ -39,3 +39,24 @@ button {
     }
 }
 
+.btn-icon {
+    position: relative;
+    margin: 5px;
+    height: 36px;
+    width: 36px;
+    @include content-center;
+    @include default-colors;
+    border-radius: 50%;
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 0 5px 2px $color-shadow-2;
+    transition: background-color 0.25s, color 0.2s;
+
+    &:hover,
+    &.active {
+        @include dark-colors;
+        text-decoration: none;
+    }
+
+} 
+
