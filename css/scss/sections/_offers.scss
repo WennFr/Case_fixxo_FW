@@ -1,38 +1,63 @@
 .offers {
     margin-top: 40px;
+
+    .btn-secondary {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
     .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "discountbox";
 
 
-    
+    }
 
-        .office-style {
-            img {
-                display: none;
-                height: 100%;
-                width: auto;
-                object-fit: cover;
-            }
-        }
-
-        .discount-box {
-
-            .discount-box-body {
-                text-align: center;
-
-            }
-
-
-        }
-
-
-
-        .party-style {
-            img {
-                display: none;
-                height: 100%;
-                width: auto;
-                object-fit: cover;
-            }
+    .office-style {
+        img {
+            display: none;
+            height: 100%;
+            width: auto;
+            object-fit: cover;
         }
     }
+
+    .discount-box {
+        // border: 1px solid black;
+        grid-area: discountbox;
+        background-color: $color-light-2;
+        padding: 20px;
+
+        .discount-box-body {
+            text-align: center;
+            border: 10px solid $color-theme;
+            padding: 20px;
+
+
+            .title-1 {
+                // font-size: 20px;
+                font-weight: 700;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                
+            }
+
+
+        }
+
+
+    }
+
+
+
+    .party-style {
+        img {
+            display: none;
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+        }
+    }
+
 }
