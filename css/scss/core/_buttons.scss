@@ -35,7 +35,53 @@ button {
 
     &:hover {
         @include dark-colors;
-        text-decoration: none;    
+        text-decoration: none;
+    }
+}
+
+.btn-secondary {
+    @include default-colors-with-border;
+    padding: 20px 80px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: inline-block;
+    transition: background-color 0.25s;
+    position: relative;
+
+    &::before {
+        content: "";
+        border-top: 2px solid $color-dark-1;
+        border-left: 2px solid $color-dark-1;
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        height: 25px;
+        width: 25px;
+    }
+
+    &::after {
+        content: "";
+        border-bottom: 2px solid $color-dark-1;
+        border-right: 2px solid $color-dark-1;
+        position: absolute;
+        bottom: 12px;
+        right: 12px;
+        height: 25px;
+        width: 25px;
+    }
+
+    &:hover {
+        @include dark-colors;
+        text-decoration: none;
+
+
+        &::before {
+            border-color: $color-light-2;
+        }
+
+        &::after {
+            border-color: $color-light-2;
+        }
     }
 }
 
@@ -58,5 +104,4 @@ button {
         text-decoration: none;
     }
 
-} 
-
+}
