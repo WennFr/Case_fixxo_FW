@@ -8,27 +8,24 @@
     }
 
     // .container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: "discountbox";
-        // border: 1px solid black;
+    //     display: grid;
+    //     grid-template-columns: 1fr;
+    //     grid-template-areas: "discountbox";
+    //     border: 1px solid black;
 
     // }
 
     .office-style {
-        // border: 1px solid rosybrown;
-
         img {
             display: none;
-            // height: 100%;
-            // width: auto;
-            // object-fit: cover;
+            height: 100%;
+            width: auto;
+            object-fit: contain;
         }
     }
 
     .discount-box {
         // border: 1px solid black;
-
         grid-area: discountbox;
         background-color: $color-light-2;
         padding: 20px;
@@ -37,7 +34,7 @@
         .discount-box-body {
             text-align: center;
             border: 10px solid $color-theme;
-            // padding: 20px;
+            padding: 20px;
 
 
             .title-1 {
@@ -50,60 +47,66 @@
     }
 
     .party-style {
-        // border: 1px solid rosybrown;
         img {
             display: none;
-            // height: 100%;
-            // width: auto;
-            // object-fit: cover;
+            height: 100%;
+            width: auto;
+            object-fit: contain;
         }
     }
 }
 
 @include lg {
-
     .offers {
         // .container {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-areas: "officestyle discountbox partystyle";
-            flex-direction: column;
-            gap:20px;   
+        //     width: 100%;
+        //     grid-template-columns: repeat(3, 1fr);
+        //     grid-template-areas: "officestyle discountbox partystyle";
+        //     flex-direction: column;
+        //     gap: 30px;
+
         // }
 
         .office-style {
             grid-area: officestyle;
 
-            img {
-                display: block;
-                width: 100%;
-                height: 100%;
-                // object-fit: cover;
-            }
-
+            img {}
         }
 
         .discount-box {
             grid-area: discountbox;
+            // width: 500px;
+            // width: 75vh;
+            
+            .discount-box-body {
+                .title-1 {}
+            }
         }
 
         .party-style {
             grid-area: partystyle;
+            position: relative;
+
+            img {}
+        }
 
 
-            img {
-                display: block;
-                width: 100%;
-                height: 100%;
-                // object-fit: cover;
+        .office-style img,
+        .party-style img {
+            // width: 100%; 
+            // height: 100%; 
+            // @include content-center;
+            display: block;
+            width: 75vh;
 
-            }
+            // max-height: 400px;
+            // width: auto;
 
         }
 
 
 
-
     }
+
 
 }
