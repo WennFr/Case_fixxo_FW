@@ -17,27 +17,30 @@
 
 <body>
   <!-- header -->
-  <header>
+ <header>
+
+    <!-- header -->
     <div class="container">
-      <a class="logotype" href="index.html">FIXXO.</a>
-      <button class="toggle-icon btn-icon"><i class="fa-regular fa-bars"></i></button>
-      <div class="menus">
-        <nav class="menu-links">
-          <a href="index.html">Home</a>
-          <a href="products.html">Products</a>
-          <a href="contact.html">Contacts</a>
+      <a id="logotype" href="">FIXXO.</a>
+      <div id="menu" class="hide">
+        <nav id="menu-links" class="links">
+          <a href="index.html" class="link">Home</a>
+          <a href="products.html" class="link">Products</a>
+          <a href="contacts.html" class="link">Contacts</a>
+
         </nav>
-        <nav class="menu-icons">
-          <a class="btn-icon" href="#"><i class="fa-regular fa-search"></i></a>
-          <a class="btn-icon" href="#"><i class="fa-regular fa-code-compare"></i>
-            <span class="menu-badge">12</span>
-          </a>
-          <a class="btn-icon" href="#"><i class="fa-regular fa-heart"></i></a>
-          <a class="btn-icon" href="#"><i class="fa-regular fa-bag-shopping"></i>
-            <span class="menu-badge">12</span>
-          </a>
+        <nav id="menu-icons" class="icons">
+          <a href="#" class="link"><i class="fa-regular fa-search"></i></a>
+          <a href="#" class="link"><i class="fa-regular fa-code-compare"></i></a>
+          <a href="#" class="link"><i class="fa-regular fa-heart"></i></a>
+          <a href="#" class="link"><i class="fa-regular fa-bag-shopping"></i></a>
+          <a href="#" class="link ms-5"><i class="fa-regular fa-user"></i></a>
         </nav>
       </div>
+      <div id="toggle-icon" class="icons">
+        <button class="link" data-option="toggle" data-target="#menu"><i class="fa-regular fa-bars"></i></button>
+      </div>
+
     </div>
   </header>
 
