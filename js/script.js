@@ -13,11 +13,14 @@ async function getProducts(target, tag) {
                 <img src="${item.imageUrl}" alt="${item.name}">
                 <div class="card-menu">
                     <nav class="icons">
+                        <a class="link" href="#"><i class="fa-regular fa-code-compare"></i></a>
                         <a class="link" href="#"><i class="fa-regular fa-heart"></i></a>
                         <a class="link" href="#"><i class="fa-regular fa-bag-shopping"></i></a>
                     </nav>
-              <a class="btn-theme" href="#">QUICK VIEW</a>
+                    <a class="btn-theme" href="#">QUICK VIEW</a>
+                </div>
             </div>
+            
             <div class="card-body">
               <p class="category">${item.category}</p>
               <p class="title">${item.name}</p>
