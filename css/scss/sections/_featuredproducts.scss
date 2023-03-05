@@ -27,7 +27,7 @@
                 margin: 0;
             }
 
-            .product-card-img {
+            .card-content {
                 position: relative;
 
                 img {
@@ -88,11 +88,11 @@
 
             // icons
 
-            .product-card-body {
+            .card-body {
                 text-align: center;
             }
 
-            .product-card-category {
+            .category {
                 font-size: 16px;
                 font-weight: 500;
                 color: #616365;
@@ -100,20 +100,20 @@
             }
 
 
-            .product-card-title {
+            .title {
                 font-size: 20px;
                 font-weight: 700;
 
             }
 
-            .product-card-rating {
+            .ranking {
                 color: #ff7373;
                 font-size: 20px;
                 margin-top: 10px;
             }
 
 
-            .product-card-price {
+            .price {
                 font-size: 22px;
                 font-weight: 700;
                 margin-top: 10px;
@@ -136,12 +136,12 @@
             
             .product-card {
 
-                .product-card-img {
-                    .menu-icons {
+                .card-content {
+                    .icons {
                         top: 10px;
                         right: 15px;
 
-                        .menu-link {
+                        .link {
                             font-size: 16px;
                             height: 36px;
                             width: 36px;
@@ -158,7 +158,7 @@
                 }
 
 
-                .product-card-category {
+                .category {
                     font-size: 13px;
                     font-weight: 500;
                     color: #616365;
@@ -166,7 +166,7 @@
 
                 }
 
-                .product-card-title {
+                .title {
                     font-size: 16px;
                     font-weight: 700;
 
@@ -174,14 +174,14 @@
                 }
 
 
-                .product-card-rating {
+                .ranking {
                     color: #ff7373;
                     font-size: 16px;
                     margin-top: 5px;
 
                 }
 
-                .product-card-price {
+                .price {
                     font-size: 18px;
                     font-weight: 700;
                     margin-top: 5px;
@@ -204,9 +204,9 @@
 
             .product-card {
 
-                .product-card-img {
+                .card-content {
 
-                    .product-card-menu {
+                    .card-menu {
                         opacity: 0%;
                         transition: all 0.15s;
                     }
@@ -216,9 +216,9 @@
 
                 &:hover {
 
-                    .product-card-img {
+                    .card-content {
 
-                        .product-card-menu {
+                        .card-menu {
                             opacity: 100%;
 
                         }

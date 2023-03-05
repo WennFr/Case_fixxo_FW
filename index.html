@@ -72,37 +72,7 @@
         <div class="title">Featured Products</div>
         <div id="main-products" class="product-grid">
 
-          `
-          <div class="product-card">
-              <div class="card-content">
-                  <img src="${item.imageUrl}" alt="${item.name}">
-                  <div class="card-menu">
-                      <nav class="icons">
-                          <a class="link" href="#"><i class="fa-regular fa-heart"></i></a>
-                          <a class="link" href="#"><i class="fa-regular fa-bag-shopping"></i></a>
-                      </nav>
-                <a class="btn-theme" href="#">QUICK VIEW</a>
-              </div>
-              <div class="card-body">
-                <p class="category">${item.category}</p>
-                <p class="title">${item.name}</p>
-                <div class="ranking">
-                  <i class="fa-solid fa-sharp fa-star"></i>
-                  <i class="fa-solid fa-sharp fa-star"></i>
-                  <i class="fa-solid fa-sharp fa-star"></i>
-                  <i class="fa-solid fa-sharp fa-star"></i>
-                  <i class="fa-regular fa-sharp fa-star"></i>
-                </div>
-                <p class="price">${item.originalPrice} ${item.currency}</p>
-              </div>
-  
-            </div>
-          </div>
-  
-        </div>
-      </div>       
-           
-          `
+         
             
     </section>
 
@@ -210,6 +180,8 @@
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
+  <script>getProducts("#main-products","featured")</script>
+
 </body>
 
 
