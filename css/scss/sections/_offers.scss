@@ -1,33 +1,32 @@
 .offers {
     margin-top: 40px;
+   
     // border: 1px solid black;
+
 
     .btn-secondary {
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
 
-    // .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "discountbox";
-    // border: 1px solid black;
 
-    // }
+    .container {
+        width: 100%;
+        max-width: none;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "discountbox";
+    }
 
     .office-style {
-        // border: 1px solid rosybrown;
 
         img {
             display: none;
-            // height: 100%;
-            // width: auto;
-            // object-fit: cover;
+            
         }
     }
 
     .discount-box {
-        // border: 1px solid black;
 
         grid-area: discountbox;
         background-color: $color-light-2;
@@ -39,32 +38,21 @@
             border: 10px solid $color-theme;
             padding: 10px;
 
-            // padding: 20px;
-
-
             .title {
                 @include font-title-3;
                 font-weight: $font-weight-bold;
                 margin-top: 1rem;
-                // margin-bottom: 1rem;
-
             }
-
             .text{
                 margin-top: -1rem;
-
             }
         }
     }
 
     .party-style {
 
-        // border: 1px solid rosybrown;
         img {
             display: none;
-            // height: 100%;
-            // width: auto;
-            // object-fit: cover;
         }
     }
 }
@@ -72,13 +60,12 @@
 @include lg {
 
     .offers {
-        // .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "officestyle discountbox partystyle";
-        flex-direction: column;
-        gap: 20px;
-        // }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "officestyle discountbox partystyle";
+            gap: 20px;
+        }
 
         .office-style {
             grid-area: officestyle;
@@ -87,7 +74,6 @@
                 display: block;
                 width: 100%;
                 height: 100%;
-                // object-fit: cover;
             }
 
         }
@@ -95,11 +81,9 @@
         .discount-box {
             grid-area: discountbox;
 
-
             .discount-box-body {
 
                 .title {
-
                     @include font-title-2;
                 }
             }
@@ -108,20 +92,12 @@
         .party-style {
             grid-area: partystyle;
 
-
             img {
                 display: block;
                 width: 100%;
                 height: 100%;
-                // object-fit: cover;
-
             }
 
         }
-
-
-
-
-    }
-
+    }   
 }
