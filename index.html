@@ -71,7 +71,7 @@
 
       <div class="title">Featured Products</div>
       <div id="main-products" class="product-grid">
-
+    </div>
   </section>
 
   <!-- Offers -->
@@ -97,18 +97,21 @@
     </div>
   </section>
 
+
+  <!-- new products -->
+
   <section class="new-products">
-    <div class="container">
+    <div class="container-fluid">
       <div class="main-section-box">
         <div class="title">2 FOR 299 SEK</div>
         <div><a class="btn-secondary" href="#">NEW PRODUCTS</a></div>
       </div>
       <div class="products">
-        <div class="container">
-          <div id="main-products" class="product-grid">
-
-          </div>
-        </div>
+        <!-- <div class="container"> -->
+          <div id="new-products" class="product-grid"></div>
+        <!-- </div> -->
+      </div>
+    </div>
   </section>
 
 
@@ -118,7 +121,7 @@
 
 
 
-
+  <!-- guarantees -->
   <section class="company-guarantees">
     <div class="container">
       <div class="guarantee-box-body">
@@ -191,6 +194,7 @@
     crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
   <script>getProducts("#main-products", "featured")</script>
+  <script>getProducts("#new-products", "new")</script>
 
 </body>
 
