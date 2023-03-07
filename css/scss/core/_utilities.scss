@@ -3,13 +3,14 @@ html, body {
     @include default-colors;
 }
 
-.totop-arrow {
+#top-arrow {
+    display: none;
     @include default-colors-with-border;
     position: fixed;
     right: 50px;
     bottom: 50px;
     font-size: 1.5rem;
-    padding: 5px 16px;
+    padding: 7px 16px;
     border-radius: 50%;
     transition: background-color 0.25s, color 0.15s;
 

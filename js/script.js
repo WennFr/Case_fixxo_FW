@@ -1,3 +1,26 @@
+const arrow = document.querySelector('#top-arrow')
+arrow.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: "smooth" })
+})
+
+window.addEventListener('scroll', function () {
+  const scrollPosY = window.scrollY
+
+  if (scrollPosY >= 100) {
+      arrow.style.display = 'block'
+  }
+  else {
+      arrow.style.display = 'none'
+  }
+
+})
+
+
+
+
+
+
+
 async function getProducts(target, tag) {
     const element = document.querySelector(target)
 
