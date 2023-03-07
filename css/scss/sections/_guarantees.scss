@@ -1,19 +1,18 @@
 .company-guarantees {
-    // border: solid black;
+    margin-top: 50px;
 
-    top: 0;
-    width: 100%;
 
     .container {
 
-        border-top: solid $color-light-4;
-        max-width: 1400px;
+        border-top: 1px solid $color-light-4;
+        // max-width: 1400px;
         display: grid;
         justify-content: center;
 
+    }
 
         .guarantee-box-body {
-            padding-top: 15px;
+            padding-top: 5px;
             // border: solid black;
             max-width: 250px;
             text-align: center;
@@ -26,12 +25,10 @@
                     display: inline-block;
                     height: 50px;
                     width: 50px;
-                    // border: solid black;
                     @include content-center;
                     @include default-colors;
                     border-radius: 50%;
                     box-shadow: 0 9px 5px -2px $color-shadow-1;
-                    // @include content-center;
                 }
 
             }
@@ -53,20 +50,38 @@
         }
 
 
-        @include lg {
+
+
+
+}
+
+
+@include lg {
+
+    .company-guarantees {
+
+        .container{
+            // border: 1px solid black;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            justify-content: center;
-            align-items: center;
+            @include content-center;            
+            
 
-            .guarantee-box-body {
-                max-width: 100%;
-                padding-left: 3.2rem;
-                padding-right: 3.2rem;
-
-            }
         }
+        
+        .guarantee-box-body {
+            // border: 1px solid black;
+            // text-align: center;
+            max-width: 100%;
+            padding-left: 2rem;
+            padding-right: 2rem;
+    
+        }
+
+
 
     }
 
+
+   
 }
