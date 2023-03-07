@@ -1,27 +1,23 @@
 footer {
     background-color: $color-light-4;
-    top: 0;
-    margin-top: 2.5rem;
-    width: 100%;
-
+    margin-top: 20px;
 
     .container {
-        // border: solid black;
 
         padding-top: 0.2rem;
         padding-bottom: 0.2rem;
         text-align: center;
 
+    }
+
         .icons {
             margin-top: 14px;
-            // border: solid black;
 
             .link {
 
                 color: $color-dark-1;
                 border-radius: 100%;
                 text-decoration: none;
-                // margin-left: 1rem;
                 margin-left: 0.3rem;
                 margin-right: 0.3rem;
 
@@ -65,15 +61,12 @@ footer {
 
 
         p {
-            // border: solid black;
             color: $color-dark-3;
-            // text-align: center;
             margin-top: 2px;
         }
 
 
 
-    }
 
 
 }
