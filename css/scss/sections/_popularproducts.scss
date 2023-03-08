@@ -170,6 +170,9 @@
 
         .products {
 
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+
             .product-grid {
                 grid-template-columns: 1fr 1fr 1fr;
 
@@ -265,6 +268,7 @@
         }
 
         .products {
+            padding-left: 1.25rem;
 
             .product-grid {
                 grid-template-columns: 1fr 1fr 1fr ;

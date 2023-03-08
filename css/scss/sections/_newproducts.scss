@@ -168,7 +168,8 @@
     .new-products {
 
         .products {
-
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
             .product-grid {
                 grid-template-columns: 1fr 1fr 1fr;
 
@@ -244,7 +245,7 @@
     .new-products {
        
         .container-fluid {
-            // padding-right: 3rem;
+            // padding-right: 1.25rem;
             grid-template-areas: "mainbox products";
             grid-template-columns: 1fr 1fr;
             // border: 1px solid #222529;
@@ -263,6 +264,7 @@
 
         .products {
 
+            padding-right: 1.25rem;
             .product-grid {
                 grid-template-columns: 1fr 1fr 1fr ;
                 // border: 1px solid black;
