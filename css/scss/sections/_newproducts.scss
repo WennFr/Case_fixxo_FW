@@ -9,7 +9,7 @@
         grid-template-areas: "mainbox"
                              "products";
 
-        gap: 30px;
+        gap: 20px;
 
 
 
@@ -168,7 +168,7 @@
     .new-products {
 
         .products {
-            padding-left: 0.7rem;
+            // padding-left: 0.7rem;
             padding-right: 0.7rem;
             .product-grid {
                 grid-template-columns: 1fr 1fr 1fr;
@@ -249,7 +249,7 @@
             grid-template-areas: "mainbox products";
             grid-template-columns: 1fr 1fr;
             // border: 1px solid #222529;
-            gap: 20px;
+            gap: 30px;
             
 
         }
@@ -264,7 +264,7 @@
 
         .products {
 
-            padding-right: 1.25rem;
+            padding-right: 1.875rem;
             .product-grid {
                 grid-template-columns: 1fr 1fr 1fr ;
                 // border: 1px solid black;

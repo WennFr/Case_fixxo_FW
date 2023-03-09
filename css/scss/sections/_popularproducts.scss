@@ -1,5 +1,5 @@
 .popular-products {
-    margin-top: 20px;
+    margin-top: 30px;
 
     .container-fluid {
         --bs-gutter-x: 0rem;
@@ -170,8 +170,8 @@
 
         .products {
 
-            padding-left: 0.7rem;
-            padding-right: 0.7rem;
+            padding-left: 1.875rem;
+            // padding-right: 0.7rem;
 
             .product-grid {
                 grid-template-columns: 1fr 1fr 1fr;
@@ -248,13 +248,13 @@
 
 @include lg {
     .popular-products {
+        // padding-left: 13px;
        
         .container-fluid {
             // padding-right: 3rem;
             grid-template-areas: "products mainbox";
             grid-template-columns: 1fr 1fr;
-            // border: 1px solid #222529;
-            gap: 20px;
+            gap: 30px;
             
 
         }
@@ -262,13 +262,14 @@
         .main-section-box {
             height: 100%;
 
+
             .title {
                 @include font-title-2;
             }
         }
 
         .products {
-            padding-left: 1.25rem;
+            // padding-left: 0.5rem;
 
             .product-grid {
                 grid-template-columns: 1fr 1fr 1fr ;
