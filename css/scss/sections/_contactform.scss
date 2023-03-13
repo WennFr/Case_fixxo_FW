@@ -1,9 +1,7 @@
 .contact-form {
     margin-top: 70px;
 
-    .container {
-
-    }
+    
 
 
         h1 {
@@ -20,7 +18,8 @@
             grid-template-areas: "name"
                 "email"
                 "comments"
-                "button";
+                "button"
+                "message";
             gap: 20px;
 
             input,
@@ -40,40 +39,50 @@
 
             }
 
+            .error {
+                font-size: 0.9em;
+                padding: 5px;
+                color: #ff7373;
+            }
+
             .contact-form-name {
                 grid-area: name;
 
-                .error {
-                    font-size: 0.9em;
-                    padding: 5px;
-                    color: #ff7373;
-                }
+               
             }
 
             .contact-form-email {
                 grid-area: email;
 
-                .error {
-                    font-size: 0.9em;
-                    padding: 5px;
-                    color: #ff7373;
-                }
             }
 
             .contact-form-comments {
                 grid-area: comments;
 
-                .error {
+              
+            }
+
+            .message{
+                grid-area: message;
+                @include content-center;
+                
+                                
+                #errorMessage{
+                    @include content-center;
+                    text-align: center;
+                    margin-bottom: 10px;
+                   
+                }
+                #confirmMessage {
                     font-size: 0.9em;
                     padding: 5px;
-                    color: #ff7373;
+                    @include content-center;
+                    text-align: center;
+                    margin-bottom: 10px;
                 }
             }
 
-            #errorMessage{
-                text-align: center;
-                margin-bottom: 10px;
-            }
+           
         }
 
 
@@ -82,16 +91,14 @@
 @include md {
     .contact-form {
 
-        .container {
-
+    
             form {
                 grid-template-columns: 1fr 1fr;
                 grid-template-areas: "name email"
                     "comments comments"
-                    "button empty";
+                    "button message";
             }
 
-        }
     }
 
 

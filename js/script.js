@@ -183,7 +183,10 @@ async function handlePostComment(e) {
   e.preventDefault()
   const errors = []
   const errorMessage = document.getElementById('errorMessage')
+  const confirmMessage = document.getElementById('confirmMessage')
+
   errorMessage.innerHTML = ''
+  confirmMessage.innerHTML = ''
 
   for (let element of e.target) {
 
@@ -223,27 +226,28 @@ async function handlePostComment(e) {
 
     }
 
-    const res = await fetch('https://localhost:7046/api/Login',{
-    method: 'post',
-    headers: {
+    const res = await fetch('https://localhost:7046/api/Login', {
+      method: 'post',
+      headers: {
         'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(form)
+      },
+      body: JSON.stringify(form)
 
     })
 
     //sparar nyckel i cookies
-    if(res.status === 200){
-        const result = await res.text()
-        sessionStorage.setItem('accessToken', result)
-        errorMessage.innerHTML = 'Tack för din förfrågan!'
-    } else{
-    errorMessage.innerHTML = 'Incorrect name, email or comment'
+    if (res.status === 200) {
+      const result = await res.text()
+      sessionStorage.setItem('accessToken', result)
+      confirmMessage.innerHTML = 'Thank you for your request! We will get back to you soon.'
+    } 
+    else {
+      errorMessage.innerHTML = 'Something went wrong. Try again later.'
 
     }
 
 
-}
+  }
 
 
 
