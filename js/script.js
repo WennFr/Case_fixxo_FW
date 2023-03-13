@@ -1,3 +1,6 @@
+
+// Arrow function
+
 const arrow = document.querySelector('#top-arrow')
 arrow.addEventListener('click', function () {
     window.scrollTo({ top: 0, behavior: "smooth" })
@@ -27,6 +30,8 @@ window.addEventListener('scroll', function () {
 
 })
 
+// Button-toggle
+
 try {
   const toggleButton = document.querySelector('[data-option="toggle"]')
   const target = toggleButton.getAttribute('data-target')
@@ -50,8 +55,7 @@ try {
 catch { }
 
 
-
-
+// Products-fetch
 
 async function getProducts(target, tag) {
     const element = document.querySelector(target)
@@ -99,3 +103,85 @@ async function getProducts(target, tag) {
      
     }
 }
+
+
+// validate contact form
+
+
+function validate(event){
+
+  switch (event.target.id) {
+
+    case 'name':
+      
+          validateName(event.target)
+          break;
+
+      case 'email':
+          validateEmail(event.target)
+          break;
+
+      case 'comments':
+          validateComment(event.target)
+          break;
+    
+  
+  }
+
+}
+
+
+
+function validateName(element){
+  const regEx = /^[A-Za-z\u00C0-\u017F]+(?:[-\s][A-Za-z\u00C0-\u017F]+)?(?:[-\s][A-Za-z\u00C0-\u017F]+)?$/;
+  const errorElement = document.getElementById(`error-${element.id}`)
+
+  if (!regEx.test(element.value)){
+
+      errorElement.innerHTML = `must be a valid name`
+      return false
+
+  }
+  
+  errorElement.innerHTML = ``
+  return true
+
+}
+
+
+function validateEmail(element){
+  const regEx = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const errorElement = document.getElementById(`error-${element.id}`)
+
+  if (!regEx.test(element.value)){
+
+      errorElement.innerHTML = `must be a valid email address`
+      return false
+
+  }
+  
+  errorElement.innerHTML = ``
+  return true
+
+}
+
+function validateComment(element){
+  const regEx = /^(?=.*[A-Za-z])[A-Za-z0-9\såäöÅÄÖ!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]{1,500}$/
+  const errorElement = document.getElementById(`error-${element.id}`)
+
+  if (!regEx.test(element.value)){
+
+      errorElement.innerHTML = `must be a valid comment`
+      return false
+
+  }
+  
+  errorElement.innerHTML = ``
+  return true
+
+}
+
+
+
+
+

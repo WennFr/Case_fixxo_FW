@@ -71,18 +71,18 @@
             <h1>Come in Contact with Us</h1>
             <form method="post">
                 <div class="contact-form-name">
-                    <input id="name" name="name" type="text" placeholder="Your Name">
-                    <div class="error">You must provide a valid name</div>
+                    <input id="name"  type="text" placeholder="Your Name" required onkeyup="validate(event)">
+                    <div id="error-name"  class="error"></div>
                 </div>
 
                 <div class="contact-form-email">
-                    <input id="email" name="email" type="email" placeholder="Your Mail">
-                    <div class="error">You must provide a valid email</div>
+                    <input id="email" type="email" placeholder="Your Mail" required onkeyup="validate(event)">
+                    <div id="error-email"class="error"></div>
                 </div>
 
                 <div class="contact-form-comments">
-                    <textarea id="comments" name="comments" placeholder="Comments"></textarea>
-                    <div class="error">You must provide a valid comment</div>
+                    <textarea id="comments" name="comments" placeholder="Comments" required onkeyup="validate(event)"></textarea>
+                    <div id="error-comments" class="error"></div>
                 </div>
 
                 <button class="btn-theme" type="submit">Post Comments</button>
