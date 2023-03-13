@@ -104,16 +104,13 @@ async function getProducts(target, tag) {
   }
 }
 
-
 // validate contact form
-
 
 function validate(event) {
 
   switch (event.target.id) {
 
     case 'name':
-
       validateName(event.target)
       break;
 
@@ -145,7 +142,6 @@ function validateName(element) {
   return true
 
 }
-
 
 function validateEmail(element) {
   const regEx = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -226,7 +222,9 @@ async function handlePostComment(e) {
 
     }
 
-    const res = await fetch('https://localhost:7046/api/Login', {
+    // dummy link 'https://localhost:7046/api/Login'
+
+    const res = await fetch('https://kyh-net22.azurewebsites.net/api/contacts', {
       method: 'post',
       headers: {
         'Content-Type': 'application/json',
@@ -235,25 +233,17 @@ async function handlePostComment(e) {
 
     })
 
-    //sparar nyckel i cookies
     if (res.status === 200) {
       const result = await res.text()
       sessionStorage.setItem('accessToken', result)
       confirmMessage.innerHTML = 'Thank you for your request! We will get back to you soon.'
-    } 
+    }
     else {
       errorMessage.innerHTML = 'Something went wrong. Try again later.'
 
     }
 
-
   }
-
-
-
-
-
-
 
 }
 
