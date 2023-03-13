@@ -69,7 +69,7 @@
     <section class="contact-form">
         <div class="container">
             <h1>Come in Contact with Us</h1>
-            <form method="post">
+            <form onsubmit="handlePostComment(event)" novalidate>
                 <div class="contact-form-name">
                     <input id="name"  type="text" placeholder="Your Name" required onkeyup="validate(event)">
                     <div id="error-name"  class="error"></div>
@@ -84,7 +84,7 @@
                     <textarea id="comments" name="comments" placeholder="Comments" required onkeyup="validate(event)"></textarea>
                     <div id="error-comments" class="error"></div>
                 </div>
-
+                <div id="errorMessage" class="error"></div>
                 <button class="btn-theme" type="submit">Post Comments</button>
             </form>
         </div>
