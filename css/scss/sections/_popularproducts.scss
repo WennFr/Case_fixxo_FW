@@ -3,13 +3,12 @@
 
     .container-fluid {
         --bs-gutter-x: 0rem;
-        // padding-right: calc(var(--bs-gutter-x) * .5);
-        // padding-left: calc(var(--bs-gutter-x) * .5);
+
         display: grid;
         grid-template-areas: "mainbox"
-                             "products";
+            "products";
 
-        gap: 0px;
+        gap: 30px;
 
 
 
@@ -18,6 +17,7 @@
     }
 
     .main-section-box {
+
         grid-area: mainbox;
         background-color: $color-light-4;
         height: 350px;
@@ -46,6 +46,8 @@
 
     .products {
         grid-area: products;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
 
         .product-grid {
             display: grid;
@@ -123,7 +125,7 @@
                 // icons
 
                 .card-body {
-                text-align: center;
+                    text-align: center;
 
                 }
 
@@ -168,9 +170,16 @@
 
     .popular-products {
 
-        .products {
 
-            padding-left: 1.875rem;
+        .container-fluid {
+            // --bs-gutter-x: 0;
+
+        }
+
+        .products {
+            // padding-left: 0.75rem;
+            // padding-right: 0.75rem;
+
             // padding-right: 0.7rem;
 
             .product-grid {
@@ -178,7 +187,7 @@
 
                 .product-card {
 
-                    
+
 
 
                     .card-content {
@@ -204,8 +213,8 @@
 
                     .card-body {
                         text-align: left;
-        
-                        }
+
+                    }
 
                     .category {
                         font-size: 13px;
@@ -249,13 +258,13 @@
 @include lg {
     .popular-products {
         // padding-left: 13px;
-       
+
         .container-fluid {
             // padding-right: 3rem;
             grid-template-areas: "products mainbox";
             grid-template-columns: 1fr 1fr;
             gap: 30px;
-            
+
 
         }
 
@@ -269,11 +278,12 @@
         }
 
         .products {
-            // padding-left: 0.5rem;
+
+            padding-left: 1.875rem;
+            padding-right: 0rem;
 
             .product-grid {
-                grid-template-columns: 1fr 1fr 1fr ;
-                // border: 1px solid black;
+                grid-template-columns: 1fr 1fr 1fr;
 
 
                 .product-card {
@@ -285,7 +295,7 @@
                             transition: all 0.15s;
                         }
 
-                        
+
                     }
 
                     &:hover {

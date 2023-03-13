@@ -9,12 +9,7 @@
         grid-template-areas: "mainbox"
                              "products";
 
-        gap: 0px;
-
-
-
-
-
+        gap: 30px;
     }
 
     .main-section-box {
@@ -46,6 +41,8 @@
 
     .products {
         grid-area: products;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
 
         .product-grid {
             display: grid;
