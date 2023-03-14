@@ -56,6 +56,42 @@
 }
 
 
+@include md {
+
+    .company-guarantees {
+
+        .container{
+            // border: 1px solid black;
+            grid-template-columns: repeat(2, 1fr);
+            place-items: center;
+            // @include content-center;            
+            
+
+        }
+        
+        .guarantee-box-body {
+            // border: 1px solid black;
+
+            // align-self: center;
+
+            // max-width: 100%;
+            // padding-left: 2rem;
+            // padding-right: 2rem;
+    
+        }
+
+
+
+    }
+
+
+
+
+}
+
+
+
+
 @include lg {
 
     .company-guarantees {
