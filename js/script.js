@@ -196,7 +196,7 @@ async function handlePostComment(e) {
       else {
         errorElement.innerHTML = ``
 
-        switch (element.type.id) {
+        switch (element.id) {
           case 'name':
             errors.push(validateName(element))
             break;
@@ -223,24 +223,34 @@ async function handlePostComment(e) {
     }
 
     // dummy link 'https://localhost:7046/api/Login'
+    // 'https://kyh-net22.azurewebsites.net/api/contacts'
 
-    const res = await fetch('https://kyh-net22.azurewebsites.net/api/contacts', {
-      method: 'post',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(form)
+    try {
 
-    })
+      const res = await fetch('https://kyh-net22.azurewebsites.net/api/contacts', {
+        method: 'post',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(form)
 
-    if (res.status === 200) {
-      const result = await res.text()
-      sessionStorage.setItem('accessToken', result)
-      confirmMessage.innerHTML = 'Thank you for your request! We will get back to you soon.'
+      })
+
+      if (res.status === 200) {
+        const result = await res.text()
+        sessionStorage.setItem('accessToken', result)
+        confirmMessage.innerHTML = 'Thank you for your request! We will get back to you soon.'
+      }
+      else {
+        errorMessage.innerHTML = 'Something went wrong. Try again later.'
+
+      }
+
     }
-    else {
-      errorMessage.innerHTML = 'Something went wrong. Try again later.'
 
+
+    catch (error) {
+      errorMessage.innerHTML = 'Something went wrong. Try again later.'
     }
 
   }
