@@ -84,11 +84,7 @@ async function getProducts(target, tag) {
               <p class="category">${item.category}</p>
               <p class="title">${item.name}</p>
               <div class="ranking">
-                <i class="fa-solid fa-sharp fa-star"></i>
-                <i class="fa-solid fa-sharp fa-star"></i>
-                <i class="fa-solid fa-sharp fa-star"></i>
-                <i class="fa-solid fa-sharp fa-star"></i>
-                <i class="fa-regular fa-sharp fa-star"></i>
+              ${StarRating(item.starRating)}
               </div>
               <p class="price">${item.originalPrice} ${item.currency}</p>
             </div>
@@ -103,6 +99,21 @@ async function getProducts(target, tag) {
 
   }
 }
+
+
+// Create stars function
+
+function StarRating(rating) {
+  const stars = Array.from({ length: 5 }, (_, index) => {
+    const className = index < rating ? "fa-solid" : "fa-regular";
+    return `<i class="fa-sharp fa-star ${className}"></i>`;
+  });
+
+  return stars.join("");
+}
+
+
+
 
 // validate contact form
 
