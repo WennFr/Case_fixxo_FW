@@ -53,6 +53,21 @@
     }
 }
 
+
+
+@include md{
+    .offers {
+        .discount-box{
+            margin-left: 3rem;
+            margin-right: 3rem;
+
+        }
+    }
+
+}
+
+
+
 @include lg {
 
     .offers {
@@ -74,6 +89,8 @@
         }
 
         .discount-box {
+            margin-left: 0rem;
+            margin-right: 0rem;
             grid-area: discountbox;
 
             .discount-box-body {

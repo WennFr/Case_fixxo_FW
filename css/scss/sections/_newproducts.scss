@@ -3,8 +3,6 @@
 
     .container-fluid {
         --bs-gutter-x: 0rem;
-        // padding-right: calc(var(--bs-gutter-x) * .5);
-        // padding-left: calc(var(--bs-gutter-x) * .5);
         display: grid;
         grid-template-areas: "mainbox"
             "products";
@@ -41,7 +39,7 @@
 
     .products {
         grid-area: products;
-        padding-left: 0.75rem;
+        // padding-left: 0.75rem;
         padding-right: 0.75rem;
 
         .product-grid {
