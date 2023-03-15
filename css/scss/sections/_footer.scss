@@ -7,66 +7,58 @@ footer {
         padding-top: 0.2rem;
         padding-bottom: 0.2rem;
         text-align: center;
-
     }
 
-        .icons {
-            margin-top: 14px;
+    .icons {
+        margin-top: 14px;
 
-            .link {
+        .link {
 
-                color: $color-dark-1;
-                border-radius: 100%;
+            color: $color-dark-1;
+            border-radius: 100%;
+            text-decoration: none;
+            margin-left: 0.3rem;
+            margin-right: 0.3rem;
+
+            transition: background-color 0.25s, color 0.20s;
+
+            &:hover {
+                background-color: $color-light-4;
                 text-decoration: none;
-                margin-left: 0.3rem;
-                margin-right: 0.3rem;
 
-                transition: background-color 0.25s, color 0.20s;
-
-                &:hover {
-                    background-color: $color-light-4;
-                    text-decoration: none;
-
-                    & i {
-                        transition: transform 0.22s;
-                        transform: scale(1.1);
-                    }
-
+                & i {
+                    transition: transform 0.22s;
+                    transform: scale(1.1);
                 }
+            }
 
+            &.facebook:hover {
+                color: blue;
+            }
 
-                &.facebook:hover {
-                    color: blue;
-                }
+            &.instagram:hover {
+                color: #e11d74;
+            }
 
-                &.instagram:hover {
-                    color: #e11d74;
-                }
+            &.twitter:hover {
+                color: #00adb5;
+            }
 
-                &.twitter:hover {
-                    color: #00adb5;
-                }
+            &.google:hover {
+                color: #0F9D58;
+            }
 
-                &.google:hover {
-                    color: #0F9D58;
-                }
-
-                &.linkedin:hover {
-                    color: #04009a;
-                }
-
+            &.linkedin:hover {
+                color: #04009a;
             }
 
         }
 
+    }
 
-        p {
-            color: $color-dark-3;
-            margin-top: 2px;
-        }
-
-
-
-
+    p {
+        color: $color-dark-3;
+        margin-top: 2px;
+    }
 
 }

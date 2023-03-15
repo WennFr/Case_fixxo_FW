@@ -15,44 +15,42 @@ $bg-transparent-light-1: rgba(255, 255, 255, 0.985);
 $color-shadow-1: rgba(0, 0, 0, 0.10);
 $color-shadow-2: rgba(112, 112, 112, 0.4);
 
-@mixin default-colors{
+@mixin default-colors {
     background-color: $color-light-1;
     color: $color-dark-2;
 }
-@mixin default-colors-with-border{
+
+@mixin default-colors-with-border {
     background-color: $color-light-1;
     color: $color-dark-2;
     border: 1px solid $color-dark-2;
 }
 
-@mixin theme-colors{
+@mixin theme-colors {
     background-color: $color-theme;
     color: $color-light-2;
 }
 
-@mixin theme-colors-with-border{
+@mixin theme-colors-with-border {
     background-color: $color-theme;
     color: $color-light-2;
     border: 1px solid $color-light-2;
 
 }
 
-@mixin dark-colors{
+@mixin dark-colors {
     background-color: $color-dark-2;
     color: $color-light-2;
 }
 
-@mixin dark-colors-with-border{
-    background-color: $color-dark-2;
-    color: $color-light-2;
-    border: 1px solid $color-dark-2;
-}
-@mixin dark-colors-with-border{
+@mixin dark-colors-with-border {
     background-color: $color-dark-2;
     color: $color-light-2;
     border: 1px solid $color-dark-2;
 }
 
-
-
-
+@mixin dark-colors-with-border {
+    background-color: $color-dark-2;
+    color: $color-light-2;
+    border: 1px solid $color-dark-2;
+}

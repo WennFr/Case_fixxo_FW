@@ -11,113 +11,71 @@
 
     }
 
-        .guarantee-box-body {
-            padding-top: 5px;
+    .guarantee-box-body {
+        padding-top: 5px;
+        // border: solid black;
+        max-width: 250px;
+        text-align: center;
+
+        .guarantee-box-icon {
             // border: solid black;
-            max-width: 250px;
-            text-align: center;
+            @include content-center;
 
-            .guarantee-box-icon {
-                // border: solid black;
+            .guarantee-icon {
+                display: inline-block;
+                height: 50px;
+                width: 50px;
                 @include content-center;
-
-                .guarantee-icon {
-                    display: inline-block;
-                    height: 50px;
-                    width: 50px;
-                    @include content-center;
-                    @include default-colors;
-                    border-radius: 50%;
-                    box-shadow: 0 9px 5px -2px $color-shadow-1;
-                }
-
-            }
-
-
-            .box-header {
-                color: $color-dark-1;
-                margin-top: 10px;
-                font-size: 17px;
-                font-weight: 700;
-                // border: solid black;
-            }
-
-            .box-secondary-text {
-                color: $color-dark-1;
-
+                @include default-colors;
+                border-radius: 50%;
+                box-shadow: 0 9px 5px -2px $color-shadow-1;
             }
 
         }
 
+        .box-header {
+            color: $color-dark-1;
+            margin-top: 10px;
+            font-size: 17px;
+            font-weight: 700;
+            // border: solid black;
+        }
 
+        .box-secondary-text {
+            color: $color-dark-1;
 
+        }
 
-
+    }
 }
-
 
 @include md {
 
     .company-guarantees {
 
-        .container{
-            // border: 1px solid black;
+        .container {
             grid-template-columns: repeat(2, 1fr);
             place-items: center;
-            // @include content-center;            
-            
-
         }
-        
-        .guarantee-box-body {
-            // border: 1px solid black;
-
-            // align-self: center;
-
-            // max-width: 100%;
-            // padding-left: 2rem;
-            // padding-right: 2rem;
-    
-        }
-
-
-
     }
-
-
-
-
 }
-
-
-
 
 @include lg {
 
     .company-guarantees {
 
-        .container{
-            // border: 1px solid black;
+        .container {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            @include content-center;            
-            
+            @include content-center;
 
         }
-        
+
         .guarantee-box-body {
-            // border: 1px solid black;
-            // text-align: center;
             max-width: 100%;
             padding-left: 2rem;
             padding-right: 2rem;
-    
+
         }
-
-
-
     }
-
-
-   
 }

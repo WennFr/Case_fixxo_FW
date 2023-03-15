@@ -30,7 +30,7 @@ header {
 
     }
 
-    .hide{
+    .hide {
         display: none;
     }
 
@@ -38,7 +38,7 @@ header {
     #menu {
         grid-area: menu;
         grid-template-areas: "menulinks"
-                             "menuicons";
+            "menuicons";
 
         @include lg {
             display: grid;
@@ -55,14 +55,12 @@ header {
         grid-area: menuicons;
         margin-top: 40px;
 
-        @include lg{
+        @include lg {
             margin-top: 0;
         }
 
     }
-
-
-
+    
     .links {
         @include lg {
             display: flex !important;

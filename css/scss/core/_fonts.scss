@@ -24,14 +24,16 @@ $font-weight-black: 900;
     line-height: $font-lineheight-small;
     margin-bottom: 0.5em;
 }
+
 @mixin font-title-2 {
     font-weight: $font-weight-bold;
     font-family: $font-poppins;
     line-height: $font-lineheight-small;
     margin-bottom: 1em;
 }
+
 @mixin font-title-3 {
-    
+
     font-weight: $font-weight-medium;
     font-family: $font-poppins;
     line-height: $font-lineheight-standard;

@@ -257,20 +257,16 @@
 
 @include lg {
     .popular-products {
-        // padding-left: 13px;
 
         .container-fluid {
-            // padding-right: 3rem;
             grid-template-areas: "products mainbox";
             grid-template-columns: 1fr 1fr;
             gap: 30px;
-
 
         }
 
         .main-section-box {
             height: 100%;
-
 
             .title {
                 @include font-title-2;
@@ -284,7 +280,6 @@
 
             .product-grid {
                 grid-template-columns: 1fr 1fr 1fr;
-
 
                 .product-card {
 
@@ -314,8 +309,6 @@
 
                     .price {
                         margin-bottom: 0px;
-                        // margin-block-start: 0px;
-                        // border: 1px solid black;
                     }
                 }
 
