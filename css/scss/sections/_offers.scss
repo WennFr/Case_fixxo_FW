@@ -34,7 +34,6 @@
             padding: 10px;
 
             .title-2 {
-                // font-size: 1.2rem;
                 @include font-title-2;
                 font-weight: $font-weight-bold;
                 margin-top: 1rem;
@@ -94,12 +93,7 @@
             margin-right: 0rem;
             grid-area: discountbox;
 
-            .discount-box-body {
-
-                .title-2 {
-                    @include font-title-2;
-                }
-            }
+       
         }
 
         .party-style {

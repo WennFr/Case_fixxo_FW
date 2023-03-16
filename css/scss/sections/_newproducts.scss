@@ -28,18 +28,12 @@
             margin-top: 1rem;
         }
 
-        .btn-secondary {
-            // padding: 20px 60px;
-
-
-        }
 
     }
 
 
     .products {
         grid-area: products;
-        // padding-left: 0.75rem;
         padding-right: 0.75rem;
         padding-left: 0.75rem;
 
@@ -51,8 +45,6 @@
 
             .product-card {
                 margin: 0;
-                /* border: 1px solid lightgray;
-                box-shadow: 0 0 10px 4px rgba(0,0,0,0.1); */
 
                 p {
                     margin: 0;
@@ -164,8 +156,6 @@
     .new-products {
 
         .products {
-            // padding-right: 0.7rem;
-            // padding-left: 0.7rem;
 
             .product-grid {
                 grid-template-columns: 1fr 1fr 1fr;
